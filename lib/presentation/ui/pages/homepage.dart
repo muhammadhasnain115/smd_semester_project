@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widget/app_drawer.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -7,6 +8,7 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Home'), backgroundColor: Colors.blue),
+      drawer: const AppDrawer(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
